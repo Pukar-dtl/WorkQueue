@@ -1,6 +1,6 @@
-import User from "../model/user.model";
+import User from "../model/user.model.js";
 import bcrypt from "bcrypt"
-import response from "../utils/response";
+import response from "../utils/response.js";
 
 export async function register(name, email, password, role){
 

@@ -8,3 +8,5 @@ const connectDb =async ()=>{
         throw new error(500, "mongo connection error", error.message)
     }
 }
+
+export default connectDb;

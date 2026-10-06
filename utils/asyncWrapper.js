@@ -1,8 +1,8 @@
 import CustomError from "./error.js"
 
-const asyncWrapper = (controller)=>{
+const asyncWrapper = async(controller)=>{
     try{
-        controller()
+        await controller()
     }catch(error){
         throw new CustomError(500, error)
     }

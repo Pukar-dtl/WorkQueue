@@ -1,9 +1,8 @@
 import { register } from "../service/register.js";
+import asyncWrapper from "../utils/asyncWrapper.js";
 
-const signUp = (req, res)=>{
+export const signUp = (req, res)=>{
     const {name, email, password, role} = req.body;
     
-    register(name, email, password, role);
-
-    
+    asyncWrapper(register(name, email, password, role));
 }
