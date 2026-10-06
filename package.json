@@ -1,0 +1,17 @@
+{
+  "name": "payment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "type": "module",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "joi": "^18.2.9",
+    "mongoose": "^9.10.4",
+    "pino": "^10.4.0"
+  }
+}
